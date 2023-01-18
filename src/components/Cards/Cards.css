@@ -1,4 +1,5 @@
 .cards{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
 }

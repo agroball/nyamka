@@ -3,21 +3,18 @@ export const initialCards = [
         taste: "с фуа-гра",
         title: "10",
         paragraph: "мышь в подарок",
-        mouse: "",
         kg:"0,5"
     },
     {
         taste: "с рыбой",
         title: "40",
-        paragraph: "мыши в подарок",
-        mouse: "2",
+        paragraph: "2 мыши в подарок",
         kg:"2"
     },
     {
         taste: "с курой",
         title: "100",
-        paragraph: "мышей в подарок",
-        mouse: "5",
+        paragraph: "5 мышей в подарок заказчик доволен",
         kg:"5"
     },
 ];

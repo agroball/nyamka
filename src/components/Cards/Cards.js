@@ -4,15 +4,18 @@ import {initialCards} from "../../vendor/constants";
 
 function Cards(props) {
 
-
 return(
     <div className="cards">
         {
             initialCards.map((cardsObj) =>(
                 <Card
                 taste={cardsObj.taste}
+                title={cardsObj.title}
+                paragraph={cardsObj.paragraph}
+                kg={cardsObj.kg}
+                onClickCard = {props.onClickCard}
                 />
-                
+
             ))}
     </div>
 );
