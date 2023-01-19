@@ -13,7 +13,8 @@ return(
                 title={cardsObj.title}
                 paragraph={cardsObj.paragraph}
                 kg={cardsObj.kg}
-                onClickCard = {props.onClickCard}
+                onCardClick={props.onCardClick}
+                selectCard={props.selectCard}
                 />
 
             ))}

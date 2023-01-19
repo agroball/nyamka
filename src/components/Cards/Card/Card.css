@@ -3,7 +3,10 @@
     flex-direction: column;
     width: 320px;
     height: 509px;
+    cursor: pointer;
 }
+
+
 
 .card__header{
     display: flex;
@@ -14,6 +17,28 @@
     border-radius: 17px;
     border: 4px #1698D9 solid;
     clip-path: polygon(15.7% 0, 100% 0, 100% 100%, 0 100%, 0 10.7%);
+}
+
+.card__header_selected {
+    display: flex;
+    width: 320px;
+    height: 480px;
+    position: relative;
+    background-image: url("/src/images/Back.svg");
+    border-radius: 17px;
+    clip-path: polygon(15.7% 0, 100% 0, 100% 100%, 0 100%, 0 10.7%);
+    border: 4px #D91667 solid;
+}
+
+.card__header_disabled {
+    display: flex;
+    width: 320px;
+    height: 480px;
+    position: relative;
+    background-image: url("/src/images/Back.svg");
+    border-radius: 17px;
+    clip-path: polygon(15.7% 0, 100% 0, 100% 100%, 0 100%, 0 10.7%);
+    border: 4px #B3B3B3 solid;
 }
 
 .card__header_block{
@@ -88,6 +113,10 @@
     bottom: 16px;
     display: flex;
     flex-direction: column;
+}
+
+.card__circle_selected{
+    background-color: #D91667;
 }
 
 .card__circle_text{

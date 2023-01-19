@@ -1,12 +1,33 @@
 import "./Card.css";
-import React from "react";
+import React, {useState} from "react";
 
 function Card(props){
 
+    // const [selectCard, setSelectCard] = useState("");
+    //
+    // const handleClick = () => {
+    //     setSelectCard((prevState) => {
+    //         if(prevState === ""){
+    //             setSelectCard("card__header_selected");
+    //         } else if (prevState === "active") {
+    //             setSelectCard("card__header_disabled");
+    //         } else if(prevState === "disabled"){
+    //             setSelectCard("");
+    //         }
+    //     });
+    // }
+
+
+    const [selectCardClick, setSelectCardClick] = useState(props.selectCard);
+
+    function handleClick() {
+        setSelectCardClick(!selectCardClick);
+    }
+
 
     return(
-<div className="card" onClick={props.onClickCard}>
-    <div className="card__header">
+<div className="card" onClick={props.onCardClick}>
+    <div className={`card__header ${selectCardClick}`}>
         <div className="card__header_block">
             <h2 className="card__header_title">Сказочное заморское яство</h2>
             <p className="card__header_name">Нямушка</p>
